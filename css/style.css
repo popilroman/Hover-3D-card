@@ -9,7 +9,37 @@
 body {
     font-family: 'Saira', sans-serif;
     font-size: 20px;
-    background-color: #b7f1fa;
 }
 
+.body__wrapper {
+    /* Создание flex-контейнера для центрирования дочерних элементов */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 
+    /* Фоновый цвет */
+    background-color: #b7f1fa;
+
+    /* Высота, соответствующая высоте экрана */
+    height: 100vh;
+}
+
+.card {
+    /* Глубина 3D анимации */
+    perspective: 1000px;   
+
+    /* Трансформация в 3D */
+    transform-style: preserve-3d;
+}
+
+.card__item {
+    /* Размеры карточек */
+    width: 350px;
+    height: 350px;
+
+    /* Цвет карточек */
+    background-color: #fff;
+
+    /* Плавность трансформаций */
+    transition: all 0.5s;
+}
