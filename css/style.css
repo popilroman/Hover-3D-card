@@ -21,6 +21,9 @@ body {
     align-items: center;
     justify-content: space-around;
 
+    /* Перенос строк, при уменьшении места */
+    flex-wrap: wrap;
+
     /* Фоновый цвет */
     background-color: #b7f1fa;
 
