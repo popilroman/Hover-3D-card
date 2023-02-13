@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
 body {
     font-family: 'Saira', sans-serif;
     font-size: 20px;
@@ -37,9 +41,22 @@ body {
     width: 350px;
     height: 350px;
 
+    /* Скругление краев */
+    border-radius: 10px;
+
     /* Цвет карточек */
     background-color: #fff;
 
+    padding: 15px;
+
     /* Плавность трансформаций */
-    transition: all 0.5s;
+    transition: all 0.2s;
+}
+
+.card__img {
+    /* Блочная модель картинки */
+    display: block;
+
+    /* Максимальная ширина по родителю */
+    max-width: 100%;
 }
